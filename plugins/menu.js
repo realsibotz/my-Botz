@@ -258,7 +258,7 @@ ${'```%npmdesc```'}
    "product": { 
    "productImage":{ 
    "mimetype": "image/jpeg", 
-   "jpegThumbnail": await (await fetch('https://telegra.ph/file/8f729fca4c6096d469664.jpg')).buffer(), //Gambarnye
+   "jpegThumbnail": await (await fetch('https://telegra.ph/file/b22b7030b0ee5c3aee98c.jpg')).buffer(), //Gambarnye
      }, 
    "title": `${ucapan()}`, 
    "description": '𝗧 𝗜 𝗠 𝗘 : ' + wktuwib, 
@@ -283,7 +283,7 @@ ${'```%npmdesc```'}
     surface : 1,
     message: '[❗] Memuat Menu ' + teks + '...',
     orderTitle: `▮Menu ▸`,
-    thumbnail: await (await fetch('https://telegra.ph/file/e6c498c568fd8d35f9395.jpg')).buffer(), //Gambarnye
+    thumbnail: await (await fetch('https://telegra.ph/file/b22b7030b0ee5c3aee98c.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
@@ -298,9 +298,9 @@ ${'```%npmdesc```'}
     itemCount : 2022,
     status: 1,
     surface : 1,
-    message: `CUTE IQ-MD By Ziv San`, 
+    message: `Sano - MD By Alwi Ezy`, 
     orderTitle: `▮Menu ▸`,
-    thumbnail: await (await fetch('https://telegra.ph/file/db5b4aed0d6d2e6c10c8f.jpg')).buffer(), //Gambarnye
+    thumbnail: await (await fetch('https://telegra.ph/file/b22b7030b0ee5c3aee98c.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }

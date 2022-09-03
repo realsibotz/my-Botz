@@ -8,7 +8,7 @@ let levelling = require('../lib/levelling')
 let handler = async (m, { conn, usedPrefix: _p, args, command }) => { 
 	let hao = ` 
  *Official Bot By @${'0'.split('@')[0]}* 
- *Powered By @${'16199961931'.split('@')[0]}*` 
+ *Powered By @${'6282239202895'.split('@')[0]}*` 
   let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
     let { exp, limit, age, money, level, role, registered } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
@@ -97,9 +97,9 @@ const fkgif = {
                 },
 	 message: { 
 		"extendedTextMessage": {
-                 "text":`CUTE IQ MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
-                 "title": `CUTE IQ MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
-                 'jpegThumbnail': await (await fetch('https://telegra.ph/file/6f11ac2de8d57a1c831c4.jpg')).buffer()
+                 "text":`SANO-MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
+                 "title": `SANO-MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
+                 'jpegThumbnail': await (await fetch('https://telegra.ph/file/b22b7030b0ee5c3aee98c.jpg')).buffer()
                         }
 	                  } 
                      }
@@ -108,10 +108,10 @@ const fkgif = {
 
 ●────━───༺༻───━────●
                 *《 BOT INFO 》*
-⚘ *Bot Name: CUTE IQ-MD IQ MD*
-⚘ *Creator: Stah Ziv San*
+⚘ *Bot Name: SANO-MD*
+⚘ *Creator: Stah Alwi Ezy*
 ⚘ *Contact Owner Bot*
-*http://wa.me/16199961931*
+*http://wa.me/6282239202895*
 ⚘ *Tanggal: ${date}*  
 ⚘ *Jam: ${time} WIB*
 ⚘ *Status: 「 ${mode} 」*
@@ -150,21 +150,21 @@ _*${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik*_
 let ftt = `*Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner
 
  *Official Bot By @${'0'.split('@')[0]}* 
- *Powered By @${'16199961931'.split('@')[0]}*`
+ *Powered By @${'6282239202895'.split('@')[0]}*`
        let judul = `${ucapanl()}`.trim() 
        const sections = [
                               {
                                 "rows": [{
                                          "title": "📊 › Status ",
-                                         "description": "Status カ CUTE IQ-MD",
+                                         "description": "Status カ SANO-MD",
                                          "rowId": ".botstat"
                                     }, {
                                          "title": "⚡› Speed ",
-                                         "description": "Menampilkan Kecepatan Respon カ CUTE IQ-MD",
+                                         "description": "Menampilkan Kecepatan Respon カ SANO-MD",
                                          "rowId": ".ping"
                                     }, {
                                          "title": "🗒️› Info ",
-                                         "description": "Menampilkan Info カ CUTE IQ-MD",
+                                         "description": "Menampilkan Info カ SANO-MD",
                                          "rowId": ".info"
                                     }, {
                                          "title": "🎐 › Developer Bot ",
@@ -318,7 +318,7 @@ let ftt = `*Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan sil
                                 }, {
                                 "rows": [{                                	
                                 "title": "📝 ∫  Catatan Perubahan ",
-                                "description": "Last Update Terakhir Di CUTE IQ-MD",
+                                "description": "Last Update Terakhir Di SANO-MD",
                                 "rowId": ".notes"                  
                 }],                
                                 "title": "▮Last Update 」"
