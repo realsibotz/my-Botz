@@ -6,12 +6,30 @@ let levelling = require('../lib/levelling')
  let jimp = require('jimp') 
  let PhoneNumber = require('awesome-phonenumber') 
  const defaultMenu = { 
-   before: ``.trim(),
-  header: `˚₊· ͟͟͞͞%category༉`, 
-   body: '◦ %cmd %islimit %isPremium', 
-   footer: '', 
-   after: `⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕. 
-      %me 
+   before: `llı *USER*
+⬡ Name %name! 
+⬡ Tersisa  *%limit Limit* 
+⬡ Role  *%role* 
+⬡ Level  *%level (%exp / %maxexp)* 
+⬡ %xp4levelup
+⬡ %totalexp XP secara Total 
+  
+llı *TODAY*
+⬡ Tanggal:  *%week %weton, %date* 
+⬡ Tanggal Islam:  *%dateIslamic* 
+⬡ Waktu:  *%time* 
+ 
+llı *INFO BOT*
+⬡ Name Bot: *%me*
+⬡ Uptime:  *%uptime (%muptime)* 
+⬡ Database: %rtotalreg dari %totalreg 
+⬡ Memory Used :  *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB* 
+%readmore`.trim(),
+  header: `˚₊· ͟͟͞͞%category ͟͟͞͞₊·˚`, 
+   body: '⸙͎۪۫  %cmd %islimit %isPremium', 
+   footer: '\n', 
+   after: `*⌕ %me@^%version*
+${'```%npmdesc```'}
  `,
 }
  let handler = async (m, { conn, usedPrefix: _p, args, command }) => { 
@@ -168,9 +186,9 @@ let levelling = require('../lib/levelling')
            let hao = `▸ Ⓟ = for premium users.\n▸ Ⓛ = fitur berlimit.
  
  *Official Bot By @${'0'.split('@')[0]}* 
- *Powered By @${'6282239202895'.split('@')[0]}*`
+ *Powered By @${'16199961931'.split('@')[0]}*`
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-     let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://telegra.ph/file/d0783980f57150aa5527d.jpg")
+     let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
      let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}')) 
      let { exp, limit, age, money, level, role, registered } = global.db.data.users[m.sender] 
      let { min, xp, max } = levelling.xpRange(level, global.multiplier) 
@@ -199,6 +217,7 @@ let levelling = require('../lib/levelling')
        minute: 'numeric', 
        second: 'numeric' 
      }) 
+     let flu = `${pickRandom(['https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text=', 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&fillColor1Color=%23f2aa4c&fillColor2Color=%23f2aa4c&fillColor3Color=%23f2aa4c&fillColor4Color=%23f2aa4c&fillColor5Color=%23f2aa4c&fillColor6Color=%23f2aa4c&fillColor7Color=%23f2aa4c&fillColor8Color=%23f2aa4c&fillColor9Color=%23f2aa4c&fillColor10Color=%23f2aa4c&fillOutlineColor=%23f2aa4c&fillOutline2Color=%23f2aa4c&backgroundColor=%23101820&text='])}`
      let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss') 
      let wibh = moment.tz('Asia/Jakarta').format('HH') 
      let wibm = moment.tz('Asia/Jakarta').format('mm') 
@@ -220,13 +239,13 @@ let levelling = require('../lib/levelling')
      const jamm = Math.floor( lebih % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)) 
      const menitt = Math.floor( lebih % (1000 * 60 * 60) / (1000 * 60)) 
      const detikk = Math.floor( lebih % (1000 * 60) / 1000) 
-     const ultah = new Date('August 18, 2022 23:59:59') 
-     const sekarat = new Date().getTime()  
-     const Kurang = ultah - sekarat 
-     const ohari = Math.floor( Kurang / (1000 * 60 * 60 * 24)); 
-     const ojam = Math.floor( Kurang % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)) 
-     const onet = Math.floor( Kurang % (1000 * 60 * 60) / (1000 * 60)) 
-     const detek = Math.floor( Kurang % (1000 * 60) / 1000) 
+     const ultah = new Date('October 1 2022 23:59:59')
+    const sekarat = new Date().getTime() 
+    const Kurang = ultah - sekarat
+    const ohari = Math.floor( Kurang / (1000 * 60 * 60 * 24));
+    const ojam = Math.floor( Kurang % (1000 * 60 * 60 * 24) / (1000 * 60 * 60))
+    const onet = Math.floor( Kurang % (1000 * 60 * 60) / (1000 * 60))
+    const detek = Math.floor( Kurang % (1000 * 60) / 1000)
      let fkon = { key: { fromMe: false, participant: '0@s.whatsapp.net', ...(m.chat ? { remoteJid: 'status@broadcast' } : {}) }, message: { contactMessage: { displayName: '𝗧 𝗜 𝗠 𝗘 : ' + wktuwib, vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:${name}\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}} 
      let ftoko = { 
      key: { 
@@ -239,7 +258,7 @@ let levelling = require('../lib/levelling')
    "product": { 
    "productImage":{ 
    "mimetype": "image/jpeg", 
-   "jpegThumbnail": await (await fetch('https://telegra.ph/file/d0783980f57150aa5527d.jpg')).buffer(), //Gambarnye
+   "jpegThumbnail": await (await fetch('https://telegra.ph/file/8f729fca4c6096d469664.jpg')).buffer(), //Gambarnye
      }, 
    "title": `${ucapan()}`, 
    "description": '𝗧 𝗜 𝗠 𝗘 : ' + wktuwib, 
@@ -264,7 +283,7 @@ let levelling = require('../lib/levelling')
     surface : 1,
     message: '[❗] Memuat Menu ' + teks + '...',
     orderTitle: `▮Menu ▸`,
-    thumbnail: await (await fetch('https://telegra.ph/file/d0783980f57150aa5527d.jpg')).buffer(), //Gambarnye
+    thumbnail: await (await fetch('https://telegra.ph/file/e6c498c568fd8d35f9395.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
@@ -279,9 +298,9 @@ let levelling = require('../lib/levelling')
     itemCount : 2022,
     status: 1,
     surface : 1,
-    message: `Sano-Md By Alwi San`, 
+    message: `CUTE IQ-MD By Ziv San`, 
     orderTitle: `▮Menu ▸`,
-    thumbnail: await (await fetch('https://telegra.ph/file/d0783980f57150aa5527d.jpg')).buffer(), //Gambarnye
+    thumbnail: await (await fetch('https://telegra.ph/file/db5b4aed0d6d2e6c10c8f.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
@@ -318,13 +337,13 @@ let levelling = require('../lib/levelling')
  	let ori = `Hi Kak, @${m.sender.split`@`[0]}
  
 Saya Adalah Cute Bot Salah Satu Bot Whatsapp Yang Siap Membantu Kamu Mempermudah Sesuatu Seperti Membuat Sticker Dan Lainnya, Kalo Kamu Mau Request Fitur Silahkan Ketik #request Pesan Atau Fitur Yang Kamu Inginkan!`
-conn.sendMessage(m.chat, {
+/*conn.sendMessage(m.chat, {
     	react: {
     		text: emot,
     		key: m.key
     	}
-    })	
-return conn.send2ButtonLoc(m.chat, cute, ori, `Note : If You Use Old Wa Or Mod And Button It Doesn't Look Di Rectly Type ${_p}? all`, 'COMMAND', '.menu2', 'DONASI', '.donasi', m)
+    })*/
+return conn.send3ButtonLoc(m.chat, await conn.resize(pickRandom(global.waifu), 300, 300), ori, `Note : Jika Anda Menggunakan Wa Lama Atau Mod Dan Tombol Itu Tidak Terlihat Langsung Ketik ${_p}simplemenu`, 'COMMAND', '.simplemenu', 'DONATION', '.donasi', 'RENT BOT', '.sewa', m)
     
     }
   
@@ -369,7 +388,7 @@ return conn.send2ButtonLoc(m.chat, cute, ori, `Note : If You Use Old Wa Or Mod A
        exp: exp - min, 
        maxexp: xp, 
        totalexp: exp, 
-       xp4levelup: max - exp <= 0 ? `Siap untuk *${_p}levelup*` : `${max - exp} XP lagi untuk levelup`, 
+       xp4levelup: max - exp <= 0 ? `Siap untuk  *${_p}levelup*` : `${max - exp} XP lagi untuk levelup`, 
        github: package.homepage ? package.homepage.url || package.homepage : '[unknown github url]', 
        level, limit, name, umur, money, age, weton, week, date, dateIslamic, time, totalreg, rtotalreg, role, 
        readmore: readMore 
@@ -390,7 +409,8 @@ return conn.send2ButtonLoc(m.chat, cute, ori, `Note : If You Use Old Wa Or Mod A
          } 
       } 
      })*/
-await conn.send3ButtonLoc(m.chat, await (await fetch(`${dimas()}`)).buffer(), '◈┈┉────[ *DASHBOARD* ]────┉┈◈' , text.trim(), 'Owner', '.owner', 'Donasi', '.donasi', 'Rules', '.rules', m)
+//await conn.send3ButtonLoc(m.chat, await conn.resize(await (await fetch('https://api.xteam.xyz/textpro/glitch?text=' + teks + '&text2=CUTE%20IQ-MD%20BY%20ZIV%20SAN&APIKEY=bf8ff984af1506b7')).buffer(), 300, 200), '◈┈┉────[ *DASHBOARD* ]────┉┈◈' , text.trim(), 'Owner', '.owner', 'Donasi', '.donasi', 'Rules', '.rules', m)
+await conn.send2ButtonLoc(m.chat, await conn.resize(await (await fetch(flu + teks)).buffer(), 300, 200), text.trim(), `▸ Ⓟ = for premium users.\n▸ Ⓛ = fitur berlimit.\n\nAktif Selama : ${uptime}\n${week} ${date}\n${dateIslamic}`, 'Owner', `${_p}owner`, 'Donasi', `${_p}donasi`, m)
 //await conn.send2ButtonImg(m.chat, await (await fetch(`${logos()}`)).buffer(), '──────────[ *DASHBOARD* ]──────────', text, 'OWNER', '.owner', '\n\nSAYA PEDO DAN SAYA BANGGA ꒪꒳꒪', 'a', fkon, { contextInfo: { forwardingScore: 999, isForwarded: true}})
 /*await conn.send2ButtonDoc(m.chat, '──────────[ *DASHBOARD* ]──────────', text, 'OWNER', '.owner', 'Rules', '.rules', m, { 
      quoted: ftoko, 
@@ -406,7 +426,10 @@ await conn.send3ButtonLoc(m.chat, await (await fetch(`${dimas()}`)).buffer(), '�
       } 
      })*/
      //conn.sendFile(m.chat, pp, 'menu.jpg', text.trim(), m).catch(_ => conn.reply(m.chat, text.trim(), m))
-  
+  conn.sendFile(m.chat, 'https://bit.ly/3AtM34K', 'haori.mp3', null, m, true, {
+type: 'audioMessage', 
+ptt: true, contextInfo:{ externalAdReply: { title: `💌 Ultah Fory : ${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik`, body: `${pickRandom(['Follow Tiktok My Bestie'])}`, sourceUrl: 'https://www.tiktok.com/@fory_whitecattiktok?_t=8V5TGON5rgv&_r=1', thumbnail: await (await fetch('https://telegra.ph/file/8d216a35e2ac344d128f8.jpg')).buffer(),}} 
+     })
 } catch (e) { 
      conn.reply(m.chat, 'Maaf, menu sedang error', m) 
      throw e 
