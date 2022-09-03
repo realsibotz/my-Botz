@@ -4,8 +4,8 @@ global.mods = JSON.parse(fs.readFileSync('./src/moderator.json')) // Want some h
 global.thumbt = global.img
 global.fsx = 999999999999
 global.kontak = [
-['16199961931', 'Ziv San', true], 
-['6282179137771', 'HAORI IQ-MD', true] 
+['6282239202895', 'Alwi San', true], 
+['6287762758045', 'Sano-MD', true] 
 ]
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -24,9 +24,9 @@ global.APIs = { // API Prefix
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
   'https://api.neoxr.eu.org': 'yntkts',
-  'https://api.xteam.xyz': 'Apikeys',
-  'https://melcanz.com': 'Apikeys',
-  'https://api.lolhuman.xyz': 'Apikeys',
+  'https://api.xteam.xyz': 'cristian9407',
+  'https://melcanz.com': 'amel',
+  'https://api.lolhuman.xyz': '04d8c4b18b91e43ff15f7999',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.me': 'apivinz',
   'https://pencarikode.xyz': 'pais',
@@ -34,14 +34,14 @@ global.APIKeys = { // APIKey Here
   'https://leyscoders-api.herokuapp.com': 'dappakntlll'
 }
 
-global.linkyt = 'https://youtu.be/60yZO4UQKdI'
-global.WM = '𝑴𝒚𝑩𝒐𝒕-𝑴𝒖𝒍𝒕𝒊 𝑫𝒆𝒗𝒊𝒄𝒆 𝑩𝒚 𝚃𝚑𝚎.𝚂𝚊𝚍.𝙱𝚘𝚢𝟶𝟷'
-global.linkgc = 'https://chat.whatsapp.com/Kyz397uqvJZ5AvX7I4BSID'
-global.linkig = 'https://www.instagram.com/the.sad.boy01'
+global.linkyt = 'https://chat.whatsapp.com/Fapstp9Z1xQL3NpYPdLpnH'
+global.WM = '𝑴𝒚𝑩𝒐𝒕-𝑴𝒖𝒍𝒕𝒊 𝑫𝒆𝒗𝒊𝒄𝒆 𝑩𝒚 Sano-MD'
+global.linkgc = 'https://chat.whatsapp.com/Fapstp9Z1xQL3NpYPdLpnH'
+global.linkig = 'https://www.instagram.com/kimhcibotz'
 global.deslink = ''
 global.logo = 'https://telegra.ph/file/1665521d176fbf172d735.jpg'
 global.titlink = 'Folllow me on Instagram'
-global.bodlink = '@the.sad.boy01'
+global.bodlink = '@SanoMd'
 
 global.wait = '_*𝐬𝐞𝐝𝐚𝐧𝐠 𝐝𝐢 𝐩𝐫𝐨𝐬𝐞𝐬 ...*_'
 global.eror = '_*мααƒ ѕєяνєя тι∂αк ѕтαвιℓ..*_'
@@ -52,7 +52,7 @@ global.urlnya = global.linkgc
 
 //============= callButtons ============//
 global.dtc = '𝒄𝒂𝒍𝒍 𝒐𝒘𝒏𝒆𝒓'
-global.phn = '+62 895-3362-82144'
+global.phn = '+62 822-3920-2895'
 
 //========== Tampilan Bot =============//
 global.sa = '╭─'
@@ -66,11 +66,11 @@ global.zt = '*'
 global.zc = ''
 
 global.thumbnailUrl = [
-  'https://telegra.ph/file/81260a8b9e8cff26d2b48.jpg', 'https://telegra.ph/file/ac4928f0824a2a0492737.jpg',
-  'https://telegra.ph/file/6359b013bc7e52c3b346f.jpg', 'https://telegra.ph/file/d43c89a5d2da72875ec05.jpg',
-  'https://telegra.ph/file/7d6c0e35f9c8f52715541.jpg', 'https://telegra.ph/file/ef4b742d47e6a9115e2ff.jpg',
-  'https://telegra.ph/file/55e5af5f33fbd57104187.jpg', 'https://telegra.ph/file/af236598456b95884bd15.jpg',
-  'https://telegra.ph/file/de92ed4a729887ffc974c.jpg', 'https://telegra.ph/file/00ce42a193b1dbbf907d4.jpg'
+  'https://telegra.ph/file/d0783980f57150aa5527d.jpg', 'https://telegra.ph/file/d0783980f57150aa5527d.jpg',
+  'https://telegra.ph/file/d0783980f57150aa5527d.jpg', 'https://telegra.ph/file/d0783980f57150aa5527d.jpg',
+  'https://telegra.ph/file/d0783980f57150aa5527d.jpg', 'https://telegra.ph/file/d0783980f57150aa5527d.jpg',
+  'https://telegra.ph/file/d0783980f57150aa5527d.jpg', 'https://telegra.ph/file/d0783980f57150aa5527d.jpg',
+  'https://telegra.ph/file/d0783980f57150aa5527d.jpg', 'https://telegra.ph/file/d0783980f57150aa5527d.jpg'
 ]
 
 //============= Games ================//
