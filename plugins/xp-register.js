@@ -16,7 +16,7 @@ let fk = {
     surface : 4072824,
     message: '▸ Terimakasih Telah Mendaftar 🏷️', 
     orderTitle: wm,
-    thumbnail: await (await fetch('https://telegra.ph/file/7c4947f3bba11243da4cb.jpg')).buffer(), //Gambarnye
+    thumbnail: await (await fetch('https://telegra.ph/file/d0783980f57150aa5527d.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
@@ -35,7 +35,7 @@ let fz = {
                  'gifPlayback': 'true', 
                  'caption': `「 RUNTIME BOT 」
 ⏲️ Waktu: ${time} WIB
-💌 Aktif Selama : ${uptime}`, 'jpegThumbnail': await (await fetch('https://telegra.ph/file/7cac84df0437232734f8a.jpg')).buffer()
+💌 Aktif Selama : ${uptime}`, 'jpegThumbnail': await (await fetch('https://telegra.ph/file/d0783980f57150aa5527d.jpg')).buffer()
                           }
                         }
                       }

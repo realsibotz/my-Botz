@@ -168,9 +168,9 @@ let levelling = require('../lib/levelling')
            let hao = `▸ Ⓟ = for premium users.\n▸ Ⓛ = fitur berlimit.
  
  *Official Bot By @${'0'.split('@')[0]}* 
- *Powered By @${'16199961931'.split('@')[0]}*`
+ *Powered By @${'6282239202895'.split('@')[0]}*`
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
-     let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
+     let pp = await conn.profilePictureUrl(who, 'image').catch((_) => "https://telegra.ph/file/d0783980f57150aa5527d.jpg")
      let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}')) 
      let { exp, limit, age, money, level, role, registered } = global.db.data.users[m.sender] 
      let { min, xp, max } = levelling.xpRange(level, global.multiplier) 
@@ -239,7 +239,7 @@ let levelling = require('../lib/levelling')
    "product": { 
    "productImage":{ 
    "mimetype": "image/jpeg", 
-   "jpegThumbnail": await (await fetch('https://telegra.ph/file/8f729fca4c6096d469664.jpg')).buffer(), //Gambarnye
+   "jpegThumbnail": await (await fetch('https://telegra.ph/file/d0783980f57150aa5527d.jpg')).buffer(), //Gambarnye
      }, 
    "title": `${ucapan()}`, 
    "description": '𝗧 𝗜 𝗠 𝗘 : ' + wktuwib, 
@@ -264,7 +264,7 @@ let levelling = require('../lib/levelling')
     surface : 1,
     message: '[❗] Memuat Menu ' + teks + '...',
     orderTitle: `▮Menu ▸`,
-    thumbnail: await (await fetch('https://telegra.ph/file/e6c498c568fd8d35f9395.jpg')).buffer(), //Gambarnye
+    thumbnail: await (await fetch('https://telegra.ph/file/d0783980f57150aa5527d.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
@@ -279,9 +279,9 @@ let levelling = require('../lib/levelling')
     itemCount : 2022,
     status: 1,
     surface : 1,
-    message: `CUTE IQ-MD By Ziv San`, 
+    message: `Sano-Md By Alwi San`, 
     orderTitle: `▮Menu ▸`,
-    thumbnail: await (await fetch('https://telegra.ph/file/db5b4aed0d6d2e6c10c8f.jpg')).buffer(), //Gambarnye
+    thumbnail: await (await fetch('https://telegra.ph/file/d0783980f57150aa5527d.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }

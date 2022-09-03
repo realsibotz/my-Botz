@@ -118,7 +118,7 @@ let levelling = require('../lib/levelling')
    try { 
            let hao = ` 
  *Official Bot By @${'0'.split('@')[0]}* 
- *Powered By @${'16199961931'.split('@')[0]}*` 
+ *Powered By @${'6282239202895'.split('@')[0]}*` 
   let package = JSON.parse(await fs.promises.readFile(path.join(__dirname, '../package.json')).catch(_ => '{}'))
     let { exp, limit, age, money, level, role, registered } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
@@ -211,9 +211,9 @@ let levelling = require('../lib/levelling')
     itemCount : 999,
     status: 1,
     surface : 1,
-    message: `廾ΛӨЯI IQ MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`, 
+    message: `Sano-Md By Alwi san 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`, 
     orderTitle: `▮Menu ▸`,
-    thumbnail: await (await fetch('https://telegra.ph/file/8450b71563bdbfb85b98d.jpg')).buffer(), //Gambarnye
+    thumbnail: await (await fetch('https://telegra.ph/file/d0783980f57150aa5527d.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
@@ -230,7 +230,7 @@ let levelling = require('../lib/levelling')
     surface : 1,
     message: `CUTE IQ-MD By Ziv San`, 
     orderTitle: `▮Menu ▸`,
-    thumbnail: await (await fetch('https://telegra.ph/file/db5b4aed0d6d2e6c10c8f.jpg')).buffer(), //Gambarnye
+    thumbnail: await (await fetch('https://telegra.ph/file/d0783980f57150aa5527d.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
@@ -243,9 +243,9 @@ let levelling = require('../lib/levelling')
                 },
 	 message: { 
 		"extendedTextMessage": {
-                 "text":`CUTE IQ MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
-                 "title": `CUTE IQ MD 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
-                 'jpegThumbnail': await (await fetch('https://telegra.ph/file/6f11ac2de8d57a1c831c4.jpg')).buffer()
+                 "text":`Sano-Md 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
+                 "title": `Sano-Md 🌱 ┊ 𝗥𝗣𝗚 Whatsapp ʙᴏᴛ`,
+                 'jpegThumbnail': await (await fetch('https://telegra.ph/file/d0783980f57150aa5527d.jpg')).buffer()
                         }
 	                  } 
                      }
@@ -254,10 +254,10 @@ let levelling = require('../lib/levelling')
 
 ●────━───༺༻───━────●
                 *《 BOT INFO 》*
-⚘ *Bot Name: CUTE IQ-MD IQ MD*
-⚘ *Creator: Stah Ziv San*
+⚘ *Bot Name:Sano - Md*
+⚘ *Creator: Alwi San*
 ⚘ *Contact Owner Bot*
-*http://wa.me/16199961931*
+*http://wa.me/6282239202895*
 ⚘ *Tanggal: 9 Juli 2022*  
 ⚘ *Jam: ${time} WIB*
 ⚘ *Status: 「 ${mode} 」*
@@ -294,21 +294,21 @@ _*${ohari} Hari ${ojam} Jam ${onet} Menit ${detek} Detik*_
 let ftt = `*Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada Owner
 
  *Official Bot By @${'0'.split('@')[0]}* 
- *Powered By @${'16199961931'.split('@')[0]}*`
+ *Powered By @${'6282239202895'.split('@')[0]}*`
        let judul = `${ucapanl()}`.trim() 
        const sections = [
                               {
                                 "rows": [{
                                          "title": "📊 › Status ",
-                                         "description": "Status カ CUTE IQ-MD",
+                                         "description": "Status カSano - Md",
                                          "rowId": ".botstat"
                                     }, {
                                          "title": "⚡› Speed ",
-                                         "description": "Menampilkan Kecepatan Respon カ CUTE IQ-MD",
+                                         "description": "Menampilkan Kecepatan Respon カSano - Md",
                                          "rowId": ".ping"
                                     }, {
                                          "title": "🗒️› Info ",
-                                         "description": "Menampilkan Info カ CUTE IQ-MD",
+                                         "description": "Menampilkan Info カSano - Md",
                                          "rowId": ".info"
                                     }, {
                                          "title": "🎐 › Developer Bot ",
@@ -462,7 +462,7 @@ let ftt = `*Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan sil
                                 }, {
                                 "rows": [{                                	
                                 "title": "📝 ∫  Catatan Perubahan ",
-                                "description": "Last Update Terakhir Di CUTE IQ-MDbotz",
+                                "description": "Last Update Terakhir Di Sano - Md botz",
                                 "rowId": ".notes"                  
                 }],                
                                 "title": "▮Last Update 」"
@@ -522,7 +522,7 @@ let ftt = `*Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan sil
            ] 
     const listMessage = {
       text: `Hai Kak ${name} Pilih Menu Dibawah Ini Yah Kak`,
-      footer: '© Cute IQ-MD By Ziv San',
+      footer: '© Sano-Md By Alwi San',
       title: judul,
       buttonText: "Pilih Disini",
       sections
@@ -583,7 +583,7 @@ let ftt = `*Note:* Jika menemukan bug, error atau kesulitan dalam penggunaan sil
      quoted: ftoko, 
      contextInfo: { forwardingScore: 99999, isForwarded: true, 
          externalAdReply: { 
-             title: 'Cute IQ-MD Testing Project By Ziv San', 
+             title: 'Sano-Md Testing Project By Alwi San', 
              body: `${pickRandom(['udah makan belum kak?', 'udh mandi belum kak?', 'Semangat ya kak!', 'Jangan begadang mulu ya!', 'jangan spam ya kak!', 'Jangan lupa donasi yak kak! >.<', 'Jaga kesehatan yaw kak!', 'Jangan lupa makan!', 'Jangan lupa istirahat yak! >.<', 'I Love you kak >.< ', 'Pr nya udh belum kak?', 'Jangan kebanyakan main hp yk! nanti sakit :‹'])}`, 
              description: `${pickRandom(['udah makan belum kak?', 'udh mandi belum kak?', 'Semangat ya kak!', 'Jangan begadang mulu ya!', 'jangan spam ya kak!', 'Jangan lupa donasi yak kak! >.<', 'Jaga kesehatan yaw kak!', 'Jangan lupa makan!', 'Jangan lupa istirahat yak! >.<', 'I Love you kak >.< ', 'Pr nya udh belum kak?', 'Jangan kebanyakan main hp yk! nanti sakit :‹'])}`, 
              mediaType: 2, 
